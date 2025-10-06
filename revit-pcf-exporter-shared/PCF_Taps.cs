@@ -161,7 +161,17 @@ namespace PCF_Taps
                 var result = line.Project(q.First().Origin);
                 XYZ elementOrigin = result.XYZPoint;
 
-                Connector tapConnector = q.MinBy(x => x.Origin.DistanceTo(elementOrigin));
+                Connector tapConnector = null;
+                double minDistance = double.MaxValue;
+                foreach (var connector in q)
+                {
+                    double distance = connector.Origin.DistanceTo(elementOrigin);
+                    if (distance < minDistance)
+                    {
+                        minDistance = distance;
+                        tapConnector = connector;
+                    }
+                }
 
                 XYZ connectorOrigin = tapConnector.Origin;
                 double connectorSize = tapConnector.Radius;

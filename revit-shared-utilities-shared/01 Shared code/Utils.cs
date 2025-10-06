@@ -1177,7 +1177,7 @@ const T f = ( ay * bx ) - ( ax * by );
         {
             if (points == null)
                 throw new ArgumentNullException(nameof(points));
-            var startPoint = points.MinBy(p => p.X);
+            var startPoint = points.MinBy2(p => p.X); // <-- Use MinBy2 instead of MinBy
             var convexHullPoints = new List<XYZ>();
             var walkingPoint = startPoint;
             var refVector = XYZ.BasisY.Negate();
@@ -1186,7 +1186,7 @@ const T f = ( ay * bx ) - ( ax * by );
                 convexHullPoints.Add(walkingPoint);
                 var wp = walkingPoint;
                 var rv = refVector;
-                walkingPoint = points.MinBy(p =>
+                walkingPoint = points.MinBy2(p =>
                 {
                     var angle = (p - wp).AngleOnPlaneTo(rv, XYZ.BasisZ);
                     if (angle < 1e-10)
@@ -3529,8 +3529,8 @@ const T f = ( ay * bx ) - ( ax * by );
                         {
                             elemento
                         };
-                        tipos = parametros
-                            .Select(a => a.GetType()).ToArray();
+                        tipos = parametros.Select(a => a
+                            .GetType()).ToArray();
                         met = temp.GetType()
                             .GetMethod("Add", tipos);
                         met.Invoke(temp, parametros);

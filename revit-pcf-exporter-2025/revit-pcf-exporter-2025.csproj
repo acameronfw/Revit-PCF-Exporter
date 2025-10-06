@@ -90,11 +90,15 @@
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 		<PackageReference Include="Microsoft.NETCore.Platforms" Version="8.0.0-preview.7.23375.6" />
 		<PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+		<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2025.0.0" />
 		<PackageReference Include="System.ComponentModel.Composition" Version="9.0.5" />
 		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
 		<PackageReference Include="System.Data.OleDb" Version="9.0.5" />
 		<PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
 	</ItemGroup>
 	<Import Project="..\revit-pcf-exporter-shared\revit-pcf-exporter-shared.projitems" Label="Shared" />
-	<Import Project="..\revit-shared-utilities-shared\revit-shared-utilities-shared.projitems" Label="Shared" />	
+	<Import Project="..\revit-shared-utilities-shared\revit-shared-utilities-shared.projitems" Label="Shared" />
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command=" if not exist &quot;C:\ProgramData\Autodesk\Revit\Addins\2025\PCF-Exporter&quot; mkdir &quot;C:\ProgramData\Autodesk\Revit\Addins\2025\PCF-Exporter&quot;&#xA; copy &quot;$(ProjectDir)*.addin&quot; &quot;C:\ProgramData\Autodesk\Revit\Addins\2025&quot;&#xA; copy &quot;$(ProjectDir)$(OutputPath)*.dll&quot; &quot;C:\ProgramData\Autodesk\Revit\Addins\2025\PCF-Exporter&quot;" />
+	</Target>	
 </Project>

@@ -59,7 +59,7 @@ namespace Shared.Tools
                            .Select(snd => (fst, snd, fst.Origin.DistanceTo(snd.Origin))))
                            .ToList();
 
-                g.longestPair = g.pairs.MaxBy(x => x.dist);
+                g.longestPair = g.pairs.OrderByDescending(x => x.dist).FirstOrDefault();
 
                 g.longestDist = g.longestPair.dist.FtToMm().Round(4);
             }
