@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "revit-pcf-exporter-2025": {
+      "commandName": "Project"
+    },
+    "Revit2025-PCF-Debug": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Autodesk\\Revit 2025\\Revit.exe"
+    }
+  }
+}

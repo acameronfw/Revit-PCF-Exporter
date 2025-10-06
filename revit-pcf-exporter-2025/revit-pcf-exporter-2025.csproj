@@ -43,16 +43,6 @@
 		<DefineConstants>$(DefineConstants);REVIT2025</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="RevitAPI">
-			<HintPath>X:\Revit API\2025\RevitAPI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="RevitAPIUI">
-			<HintPath>X:\Revit API\2025\RevitAPIUI.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemGroup>
 		<Compile Include="..\revit-pcf-exporter-FORMS\DarkRadioBox.cs">
 			<Link>DarkRadioBox.cs</Link>
 			<SubType>Component</SubType>
@@ -96,6 +86,16 @@
 		<PackageReference Include="System.Data.OleDb" Version="9.0.5" />
 		<PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
 		<PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="RevitAPI">
+	    <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPI.dll</HintPath>
+	    <Private>False</Private>
+	  </Reference>
+	  <Reference Include="RevitAPIUI">
+	    <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPIUI.dll</HintPath>
+	    <Private>False</Private>
+	  </Reference>
 	</ItemGroup>
 	<Import Project="..\revit-pcf-exporter-shared\revit-pcf-exporter-shared.projitems" Label="Shared" />
 	<Import Project="..\revit-shared-utilities-shared\revit-shared-utilities-shared.projitems" Label="Shared" />

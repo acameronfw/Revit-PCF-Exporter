@@ -173,6 +173,7 @@ namespace PCF_Fittings
                     case ("CAP"): //done
                         goto case ("FLANGE-BLIND"); //done
 
+
                     case ("TEE-STUB"): //done
                         {
                             XYZ endPointOriginOletPrimary = cons.Primary.Origin;
