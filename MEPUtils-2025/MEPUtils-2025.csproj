@@ -82,6 +82,7 @@
 		<PackageReference Include="MoreLinq.Source.MoreEnumerable.DistinctBy" Version="1.0.2" />
 		<PackageReference Include="MoreLinq.Source.MoreEnumerable.MinBy" Version="1.0.2" />
 		<PackageReference Include="NLog" Version="5.2.8" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
 		<PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
 	</ItemGroup>
 	<ItemGroup>

@@ -773,6 +773,7 @@ namespace Shared
         /// <returns>DataSet with the data</returns>
         public static DataSet ReadExcelToDataSet(string fileName, bool dataHasHeaders = true)
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             DataSet dataSet;
             using (var stream = File.Open(fileName, FileMode.Open, FileAccess.Read))
             using (var reader = ExcelReaderFactory.CreateReader(stream))

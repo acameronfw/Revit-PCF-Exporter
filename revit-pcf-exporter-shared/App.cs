@@ -1,17 +1,18 @@
 #region Header
 #endregion // Header
 
-using System;
-using System.Reflection;
-using System.Windows.Media.Imaging;
-using System.IO;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using PCF_Functions;
 //using mySettings = PCF_Functions.Properties.Settings;
 using PCF_Taps;
+using System;
 using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Text;
+using System.Windows.Media.Imaging;
 
 namespace PCF_Exporter
 {
@@ -45,6 +46,7 @@ namespace PCF_Exporter
 
         public Result OnStartup(UIControlledApplication application)
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             AddMenu(application);
             return Result.Succeeded;
         }

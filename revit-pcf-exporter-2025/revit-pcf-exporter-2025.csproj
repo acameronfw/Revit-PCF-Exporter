@@ -94,6 +94,7 @@
 		<PackageReference Include="System.ComponentModel.Composition" Version="9.0.5" />
 		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
 		<PackageReference Include="System.Data.OleDb" Version="9.0.5" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
 		<PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
 	</ItemGroup>
 	<Import Project="..\revit-pcf-exporter-shared\revit-pcf-exporter-shared.projitems" Label="Shared" />
