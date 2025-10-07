@@ -19,6 +19,9 @@ namespace PCF_Model
 
             sb.Append(base.WriteSpecificData());
 
+            //Append Plant3dISO Writer
+            sb.Append(Composer.Plant3DIsoWriter(Element, Element.Document)); 
+
             var spec = plst.PCF_ELEM_SPEC.GetValue(Element);
             if (spec.IsNotNoE())
             {

@@ -16,7 +16,10 @@ namespace PCF_Model
         protected override StringBuilder WriteSpecificData()
         {
             StringBuilder sb = new StringBuilder();
-            
+
+            //Plant3dISO Writer
+            sb.Append(Composer.Plant3DIsoWriter(Element, Element.Document));
+
             sb.Append(base.WriteSpecificData());
 
             sb.Append(EndWriter.WriteBP1(Element, Cons.Tertiary));

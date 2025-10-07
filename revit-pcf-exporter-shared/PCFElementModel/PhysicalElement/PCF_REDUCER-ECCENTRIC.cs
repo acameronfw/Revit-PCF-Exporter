@@ -17,6 +17,9 @@ namespace PCF_Model
         {
             StringBuilder sb = new StringBuilder();
 
+            //Plant3dISO Writer
+            sb.Append(Composer.Plant3DIsoWriter(Element, Element.Document));
+
             sb.Append(base.WriteSpecificData());
 
             //Temporary hack

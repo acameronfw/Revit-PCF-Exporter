@@ -19,6 +19,9 @@ namespace PCF_Model
         {
             StringBuilder sb = new StringBuilder();
 
+            //Plant3dISO Writer
+            sb.Append(Composer.Plant3DIsoWriter(Element, Element.Document));
+
             Parameter pakning = Element.LookupParameter("Pakning");
             if (pakning != null && pakning.AsInteger() == 1)
                 throw new Exception("Pakninger er ikke implementeret for blind flanger endnu!");
