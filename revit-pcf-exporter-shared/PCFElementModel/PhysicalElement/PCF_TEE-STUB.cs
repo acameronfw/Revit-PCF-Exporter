@@ -20,6 +20,9 @@ namespace PCF_Model
         {
             StringBuilder sb = new StringBuilder();
 
+            //Plant3dISO Writer
+            sb.Append(Composer.Plant3DIsoWriter(Element, Element.Document));
+
             XYZ endPointOriginOletPrimary = Cons.Primary.Origin;
             XYZ endPointOriginOletSecondary = Cons.Secondary.Origin;
 

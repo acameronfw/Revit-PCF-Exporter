@@ -10,14 +10,14 @@ using System.Text;
 
 namespace PCF_Model
 {
-    internal class PCF_VALVE_ANGLE : PCF_EP1_EP2
+    internal class PCF_VALVE : PCF_EP1_EP2
     {
-        public PCF_VALVE_ANGLE(Element element) : base(element) { }
+        public PCF_VALVE(Element element) : base(element) { }
         protected override StringBuilder WriteSpecificData()
         {
             StringBuilder sb = new StringBuilder();
 
-            //Plant3dISO Writer
+            //Append Plant3dISO Writer
             sb.Append(Composer.Plant3DIsoWriter(Element, Element.Document));
 
             sb.Append(base.WriteSpecificData());

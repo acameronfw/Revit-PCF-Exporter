@@ -85,6 +85,10 @@ namespace PCF_Model
                 sb.Append(WriteTaps());
 
                 sb.AppendLine($"    UCI {Element.UniqueId}");
+
+                // Append the WEIGHT parameter
+                sb.Append(ParameterDataWriter.ParameterValue(
+                    "WEIGHT", new[] { "PCF_ELEM_CII_COMPWEIGHT" }, Element));
             }
             catch (Exception ex)
             {

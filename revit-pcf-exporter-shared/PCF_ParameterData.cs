@@ -144,6 +144,7 @@ namespace PCF_Functions
         public static readonly pdef PCF_ELEM_BOLT_LENGTH = new pdef("PCF_ELEM_BOLT_LENGTH", ParameterDomain.ELEM, ParameterUsage.USER, pd.Text, new Guid("C1F7A088-1719-42D1-BC70-C645FBC9F1FA"), "BOLT-LENGTH");
         public static readonly pdef PCF_ELEM_BOLT_QUANTITY = new pdef("PCF_ELEM_BOLT_QUANTITY", ParameterDomain.ELEM, ParameterUsage.USER, pd.Text, new Guid("C1F7A088-1729-42D1-BC70-C645FBC9F1FA"), "BOLT-QUANTITY");
         public static readonly pdef PCF_ELEM_BOLT_ITEM_CODE = new pdef("PCF_ELEM_BOLT_ITEM_CODE", ParameterDomain.ELEM, ParameterUsage.USER, pd.Text, new Guid("C1F7A088-1739-42D1-BC70-C645FBC9F1FA"), "BOLT-ITEM-CODE");
+        public static readonly pdef PCF_ELEM_COMP_WEIGHT = new pdef("PCF_ELEM_COMP_WEIGHT", ParameterDomain.ELEM, ParameterUsage.USER, pd.Text, new Guid("399795D9-E505-4101-A84C-2B2E8645F900"), "WEIGHT");
 
 
         //Special (for special purposes like creating fieldwelds or splitpoints)

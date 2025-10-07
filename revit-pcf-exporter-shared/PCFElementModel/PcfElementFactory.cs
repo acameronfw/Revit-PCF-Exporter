@@ -33,6 +33,7 @@ namespace PCF_Model
                 case "FILTER":
                 case "GASKET":
                 case "REDUCER-CONCENTRIC":
+                    return new PCF_REDUCER_ECCENTRIC(e);
                 case "COUPLING":
                 case "UNION":
                 case "PIPE-BLOCK-FIXED":
@@ -48,6 +49,7 @@ namespace PCF_Model
                 case "OLET":
                     return new PCF_TEE_STUB(e);
                 case "VALVE":
+                    return new PCF_VALVE(e);
                 case "INSTRUMENT":
                 case "MISC-COMPONENT":
                     return new PCF_EP1_EP2_CPCONS(e);

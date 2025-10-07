@@ -18,10 +18,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_CPFI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_BOLT.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_FLOOR-SYMBOL.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_REDUCER-CONCENTRIC.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_SUPPORT.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_INSTRUMENT-DIAL.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_EP1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_TAP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_VALVE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_VALVE-ANGLE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_EP1_EP2_EP3_CPCONS.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_EP1_EP2_CPCONS.cs" />
