@@ -88,7 +88,7 @@ namespace PCF_Model
 
                 // Append the WEIGHT parameter
                 sb.Append(ParameterDataWriter.ParameterValue(
-                    "WEIGHT", new[] { "PCF_ELEM_CII_COMPWEIGHT" }, Element));
+                    "WEIGHT", new[] { "PCF_ELEM_COMP_WEIGHT" }, Element));
             }
             catch (Exception ex)
             {
