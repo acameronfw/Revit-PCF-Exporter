@@ -61,6 +61,7 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 		<PackageReference Include="DarkModeUI" Version="3.1.0" />
 		<PackageReference Include="ExcelDataReader" Version="3.8.0" />
+		<PackageReference Include="Microsoft-Windows10-APICodePack-Core" Version="1.1.8" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 		<PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
 		<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2025.0.0" />

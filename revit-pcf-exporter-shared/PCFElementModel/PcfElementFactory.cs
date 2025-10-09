@@ -68,6 +68,8 @@ namespace PCF_Model
                     return new PCF_TAP(e);
                 case "BOLT":
                     return new PCF_BOLT(e);
+                case "LAPJOINT-RING":
+                    return new PCF_LAPJOINT_RING(e);
                 default:
                     throw new NotImplementedException($"Element type {type} is not implemented!");
             }
