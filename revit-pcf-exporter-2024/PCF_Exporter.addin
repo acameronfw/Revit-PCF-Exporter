@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">    
+		<Assembly>C:\ProgramData\Autodesk\Revit\Addins\2024\PCF-Exporter\PCF-Exporter.dll</Assembly>
+		<ClientId>73348466-3f81-4752-8283-1b5dd6b04c3b</ClientId>
+		<FullClassName>PCF_Exporter.App</FullClassName>
+		<Name>PCF Tools</Name>
+		<VendorId>FGI</VendorId>
+		<VendorDescription>FGI</VendorDescription>
+  </AddIn>
+  </RevitAddIns>
