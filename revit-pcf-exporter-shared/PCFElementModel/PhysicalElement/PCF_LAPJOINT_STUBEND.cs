@@ -10,9 +10,9 @@ using System.Text;
 
 namespace PCF_Model
 {
-    internal class PCF_FLANGE : PcfPhysicalElement
+    internal class PCF_LAPJOINT_STUBEND : PcfPhysicalElement
     {
-        public PCF_FLANGE(Element element) : base(element) { }
+        public PCF_LAPJOINT_STUBEND(Element element) : base(element) { }
         protected override StringBuilder WriteSpecificData()
         {
             StringBuilder sb = new StringBuilder();
@@ -22,7 +22,7 @@ namespace PCF_Model
 
             sb.Append(EndWriter.WriteEP1(Element, Cons.Secondary));
 
-            var pakning = Element.LookupParameter("Gasket");
+            var pakning = Element.LookupParameter("Pakning");
             if (pakning != null && pakning.AsInteger() == 1)
             {
                 XYZ dir = -Cons.Primary.CoordinateSystem.BasisZ.Normalize();
