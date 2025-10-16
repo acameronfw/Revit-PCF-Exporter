@@ -70,8 +70,6 @@ namespace PCF_Model
                     return new PCF_BOLT(e);
                 case "LAPJOINT-RING":
                     return new PCF_LAPJOINT_RING(e);
-                case "LAPJOINT-STUBEND":
-                    return new PCF_LAPJOINT_STUBEND(e);
                 default:
                     throw new NotImplementedException($"Element type {type} is not implemented!");
             }

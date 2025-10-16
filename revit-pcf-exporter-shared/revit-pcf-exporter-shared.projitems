@@ -17,7 +17,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PcfPhysicalElement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_CPFI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_BOLT.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_LAPJOINT_STUBEND.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_LAPJOINT_RING.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_FLOOR-SYMBOL.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PCFElementModel\PhysicalElement\PCF_REDUCER-CONCENTRIC.cs" />

@@ -22,7 +22,7 @@ namespace PCF_Model
 
             sb.Append(EndWriter.WriteEP1(Element, Cons.Secondary));
 
-            var pakning = Element.LookupParameter("Gasket");
+            var pakning = Element.LookupParameter("Pakning");
             if (pakning != null && pakning.AsInteger() == 1)
             {
                 XYZ dir = -Cons.Primary.CoordinateSystem.BasisZ.Normalize();
